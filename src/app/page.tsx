@@ -1,27 +1,9 @@
-import Image from "next/image";
+import Header from "./components/ui/Header";
 
-export default function Home() {
+export default function Page() {
   return (
-    <div className="">
-     <div className="app-header">
-      <div className="header-logo">
-        <Image src={""} alt=""></Image>
-      </div>
-      <div className="menu-icon">
-        <Image src={""} alt=""></Image>
-      </div>
-
-      <nav>
-        <ul>
-          <a href="#home"><li>Home</li></a>
-          <a href="#about"><li>About</li></a>
-          <a href="#projects"><li>Projects</li></a>
-          <a href="#skills"><li>Skills</li></a>
-          <a href="#contact"><li>Contact</li></a>
-        </ul>
-      </nav>
-
-     </div>
+    <div className="bg-zinc-800 h-screen">
+      <Header></Header>
     </div>
   );
 }
