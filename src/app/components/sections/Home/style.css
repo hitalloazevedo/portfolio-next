@@ -1,7 +1,7 @@
 #home::after {
     content: "";
     position: absolute;
-    background-color: #499649c2;
+    background: linear-gradient(70deg, #3a3a3a, #20631f);
     width: 200px;
     height: 250px;
     filter: blur(30px);
