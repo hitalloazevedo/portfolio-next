@@ -55,7 +55,7 @@ export default function Home() {
             </div>
           </div>
 
-          <a className="arrow-down absolute bottom-[20px]" href="#about"><Image className="w-[50px]" src={downIcon} alt=""></Image></a>
+          <a className="arrow-down absolute bottom-[20px]" href="#about"><Image className="w-[40px]" src={downIcon} alt=""></Image></a>
       </section>
     )
 }
