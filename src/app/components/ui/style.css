@@ -1,0 +1,70 @@
+.menuDrawer {
+    transition: .6s;
+    opacity: 0;
+    height: 180px;
+    animation: smoothDrawerClosing .6s;
+    visibility: hidden;
+    transition: .6s;
+}
+
+.activeMenuDrawer {
+    opacity: 1;
+    animation: smoothDrawerOpening .6s;
+    visibility: visible;
+}
+
+@keyframes smoothDrawerOpening {
+    0% {
+        height: 0px;
+    }
+
+    100% {
+        height: 180px;
+    }
+}
+
+@keyframes smoothDrawerClosing {
+    0% {
+        height: 180px;
+    }
+
+    100% {
+        height: 80px;
+    }
+}
+
+/* =============================================================== */
+
+.menuOptions {
+    position: relative;
+    left: -100px;
+    animation: hideOptionsToSide .6s;
+    opacity: 0;
+    transition: .2s;
+}
+
+.activeMenuOptions {
+    left: 0px;
+    animation: showOptionsFromSide .6s;
+    opacity: 1;
+}
+
+@keyframes showOptionsFromSide {
+    0% {
+        left: -100px;
+    }
+
+    100% {
+        left: 0px;
+    }
+}
+
+@keyframes hideOptionsToSide {
+    0% {
+        left: 0px;
+    }
+
+    100% {
+        left: -100px;
+    }
+}
