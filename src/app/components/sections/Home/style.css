@@ -1,0 +1,60 @@
+#home::after {
+    content: "";
+    position: absolute;
+    background-color: #1ca31c57;
+    width: 200px;
+    height: 250px;
+    filter: blur(30px);
+    border-radius: 100%;
+    z-index: 5;
+    animation: moving 20s infinite ease;
+}
+
+.tech-image-container > .carrousel {
+    margin: 0 auto;
+    padding: 20px 0;
+    max-width: 700px;
+    width: 80vw;
+    overflow: hidden;
+    display: flex;
+
+    > * {
+        flex: 0 0 100%;
+      }
+}
+
+.group {
+    display: flex;
+    gap: 40px;
+    /* Add padding to the right to create a gap between the last and first card. */
+    /* padding-right: 340px; */
+    will-change: transform; /* We should be nice to the browser - let it know what we're going to animate. */
+    animation: scrolling 5s linear infinite;
+}
+
+@keyframes scrolling {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-102%);
+    }
+}
+
+.arrow-down {
+    animation: floating 1s infinite ease;
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
