@@ -1,7 +1,7 @@
 #home::after {
     content: "";
     position: absolute;
-    background-color: #1ca31c57;
+    background-color: #499649c2;
     width: 200px;
     height: 250px;
     filter: blur(30px);
