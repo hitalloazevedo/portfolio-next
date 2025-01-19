@@ -1,6 +1,7 @@
 import Header from "./components/ui/Header";
 import Home from "./components/sections/Home";
 import About from "./components/sections/About";
+import Skills from "./components/sections/Skills";
 
 export default function Page() {
   return (
@@ -8,6 +9,7 @@ export default function Page() {
       <Header></Header>
       <Home></Home>
       <About></About>
+      <Skills></Skills>
     </div>
   );
 }
