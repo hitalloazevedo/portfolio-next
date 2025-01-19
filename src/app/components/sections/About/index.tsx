@@ -20,9 +20,9 @@ export default function About(){
                     <p>Currently I&apos;m exploring backend development more deeply, I am really enjoying the experience using Node.js, Express and others tools, such as PrismaORM, MongoDB and Typescript.</p>
                 </div>
                 <div className="social-media-container flex gap-5 items-center justify-center mt-5">
-                    <a href=""><Image className="w-[22px]" src={githubIcon} alt=""></Image></a>
-                    <a href=""><Image className="w-[30px]" src={linkedinIcon} alt=""></Image></a>
-                    <a href=""><Image className="w-[28px]" src={instagramIcon} alt=""></Image></a>
+                    <a href=""><Image className="w-[22px] hover:scale-110 duration-100" src={githubIcon} alt=""></Image></a>
+                    <a href=""><Image className="w-[30px] hover:scale-110 duration-100" src={linkedinIcon} alt=""></Image></a>
+                    <a href=""><Image className="w-[28px] hover:scale-110 duration-100" src={instagramIcon} alt=""></Image></a>
                 </div>  
                 <div className="download-cv text-white mt-5">
                     <p className="flex items-center justify-center gap-1 text-sm"><Image className="w-[25px]" src={downloadIcon} alt=""></Image><a href="">Download my curriculum</a></p>
