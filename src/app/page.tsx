@@ -5,7 +5,7 @@ import Skills from "./components/sections/Skills";
 
 export default function Page() {
   return (
-    <div className="bg-zinc-800 h-screen">
+    <div className="bg-zinc-800">
       <Header></Header>
       <Home></Home>
       <About></About>

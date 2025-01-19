@@ -7,7 +7,7 @@ import Image from "next/image"
 
 export default function About(){
     return (
-        <section id="about" className="flex flex-col items-center bg-zinc-800">
+        <section id="about" className="flex flex-col items-center">
             <div className="about-header p-20">
                 <h2 className="text-4xl font-semibold text-white">About me</h2>
             </div>
