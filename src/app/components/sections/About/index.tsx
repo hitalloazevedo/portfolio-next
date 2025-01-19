@@ -7,8 +7,8 @@ import Image from "next/image"
 
 export default function About(){
     return (
-        <section id="about" className="h-screen flex flex-col items-center bg-zinc-800">
-            <div className="about-header p-5">
+        <section id="about" className="flex flex-col items-center bg-zinc-800">
+            <div className="about-header p-20">
                 <h2 className="text-4xl font-semibold text-white">About me</h2>
             </div>
 
@@ -27,7 +27,7 @@ export default function About(){
                 <div className="download-cv text-white mt-5">
                     <p className="flex items-center justify-center gap-1 text-sm"><Image className="w-[25px]" src={downloadIcon} alt=""></Image><a href="">Download my curriculum</a></p>
                 </div>
-                <div className="my-image-container w-[300px] rotate-2 rounded-lg overflow-hidden mt-8 shadow-[0px_0px_30px_rgba(255,255,255,.1)]">
+                <div className="my-image-container w-[300px] rotate-2 rounded-lg overflow-hidden mt-8 mb-5 shadow-[0px_0px_30px_rgba(255,255,255,.1)]">
                     <Image src={myImage} alt=""></Image>
                 </div>
             </div>
