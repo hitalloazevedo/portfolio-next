@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import menuIcon from "@/../public/menu-icon.svg";
+import Link from "next/link";
 import closeMenuIcon from "@/../public/close-icon.svg";
 import { useState } from "react";
 import "./style.css";
@@ -27,7 +28,7 @@ export default function Header() {
     <div>
       <div className="app-header fixed w-screen backdrop-blur flex justify-between items-center border-b border-white p-3 z-10">
         <div className="header-logo">
-          <h3 className="text-[1.5rem] text-white">
+          <h3 className="text-[1.3rem] text-white">
             hitallo-<span className="text-[#00f500]">dev</span>
           </h3>
         </div>
@@ -54,21 +55,11 @@ export default function Header() {
             isMenuActive ? "activeMenuOptions" : ""
           } flex flex-col gap-2 text-white items-center`}
         >
-          <a href="#home">
-            <li>Home</li>
-          </a>
-          <a href="#about">
-            <li>About</li>
-          </a>
-          <a href="#projects">
-            <li>Projects</li>
-          </a>
-          <a href="#skills">
-            <li>Skills</li>
-          </a>
-          <a href="#contact">
-            <li>Contact</li>
-          </a>
+          <li><Link href="#home">Home</Link></li>
+          <li><Link href="#about">About</Link></li>
+          <li><Link href="#about">Projects</Link></li>
+          <li><Link href="#about">Skills</Link></li>
+          <li><Link href="#about">Contact</Link></li>
         </ul>
       </nav>
     </div>
