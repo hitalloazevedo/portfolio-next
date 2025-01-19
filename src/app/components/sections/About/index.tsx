@@ -8,7 +8,7 @@ import Image from "next/image"
 export default function About(){
     return (
         <section id="about" className="flex flex-col items-center">
-            <div className="about-header p-20">
+            <div className="about-header py-20">
                 <h2 className="text-4xl font-semibold text-white">About me</h2>
             </div>
 
