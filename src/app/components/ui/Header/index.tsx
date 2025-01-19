@@ -25,7 +25,7 @@ export default function Header() {
 
   return (
     <div>
-      <div className="app-header fixed w-screen backdrop-blur flex justify-between items-center border-b border-white p-3">
+      <div className="app-header fixed w-screen backdrop-blur flex justify-between items-center border-b border-white p-3 z-10">
         <div className="header-logo">
           <h3 className="text-[1.5rem] text-white">
             hitallo-<span className="text-[#00f500]">dev</span>
@@ -47,7 +47,7 @@ export default function Header() {
       <nav
         className={`menuDrawer ${
           isMenuActive ? "activeMenuDrawer" : ""
-        } absolute backdrop-blur w-screen top-16 p-5`}
+        } fixed backdrop-blur w-screen top-[61px] p-5 z-10`}
       >
         <ul
           className={`menuOptions ${
