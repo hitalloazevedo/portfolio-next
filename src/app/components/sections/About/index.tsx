@@ -1,4 +1,3 @@
-import "./style.css"
 import githubIcon from '@/../public/github-icon.svg'
 import linkedinIcon from '@/../public/linkedin-icon.svg'
 import instagramIcon from '@/../public/instagram-icon.svg'
