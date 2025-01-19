@@ -2,11 +2,12 @@
     content: "";
     position: absolute;
     background: linear-gradient(70deg, #3a3a3a, #20631f);
-    width: 200px;
-    height: 250px;
-    filter: blur(30px);
+    width: 50px;
+    height: 50vh;
+    filter: blur(45px);
     border-radius: 100%;
     z-index: 5;
+    right: calc(0vw);
     animation: moving 20s infinite ease;
 }
 
