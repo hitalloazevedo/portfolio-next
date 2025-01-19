@@ -48,7 +48,7 @@ export default function Header() {
       <nav
         className={`menuDrawer ${
           isMenuActive ? "activeMenuDrawer" : ""
-        } fixed backdrop-blur w-screen top-[61px] p-5 z-10`}
+        } fixed backdrop-blur w-screen top-[56px] p-5 z-10`}
       >
         <ul
           className={`menuOptions ${
@@ -57,9 +57,9 @@ export default function Header() {
         >
           <li><Link href="#home">Home</Link></li>
           <li><Link href="#about">About</Link></li>
-          <li><Link href="#about">Projects</Link></li>
-          <li><Link href="#about">Skills</Link></li>
-          <li><Link href="#about">Contact</Link></li>
+          <li><Link href="#skills">Skills</Link></li>
+          <li><Link href="#projects">Projects</Link></li>
+          <li><Link href="#contact">Contact</Link></li>
         </ul>
       </nav>
     </div>
