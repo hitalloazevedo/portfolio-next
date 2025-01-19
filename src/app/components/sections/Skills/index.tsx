@@ -1,18 +1,24 @@
-import SkillCard from "../../ui/SkillCard"
+import SkillCard from "../../ui/SkillCard";
+import { ISkill } from "@/app/interfaces/Skill";
 
-interface ISkill {
-    uuid: string;
-    title: string;
-    description: string;
-    svg_image: string;
+interface ISkillProps {
+    skills: ISkill[];
 }
 
-export default async function Skills(){
-    
-    const response = await fetch("https://projects-repository.onrender.com/skills")
-    const data = await response.json()
-    const skills = data.data;
+// Função que será executada no servidor para obter os dados
+export async function getServerSideProps() {
+    // Substitua pela URL real de onde as habilidades são obtidas
+    const response = await fetch("https://projects-repository.onrender.com/skills");
+    const data = await response.json();
 
+    return {
+        props: {
+            skills: data || [], // Passa as skills para o componente
+        },
+    };
+}
+
+export default function Skills({ skills }: ISkillProps) {
     return (
         <section id="skills">
             <div className="skills-header text-white py-20 mt-6">
@@ -20,8 +26,15 @@ export default async function Skills(){
             </div>
             
             <div className="skills-content flex flex-col items-center gap-5">
-                { skills.map((skill: ISkill) => <SkillCard imageUrl={skill.svg_image} title={skill.title} description={skill.description} key={skill.uuid}/>) }
+                {skills && skills.map((skill: ISkill) => (
+                    <SkillCard
+                        imageUrl={skill.svg_image}
+                        title={skill.title}
+                        description={skill.description}
+                        key={skill.uuid}
+                    />
+                ))}
             </div>
         </section>
-    )
+    );
 }
