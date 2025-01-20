@@ -28,8 +28,8 @@ export default function Page() {
       <Header></Header>
       <Home></Home>
       <About></About>
-      <Skills skills={skills} ></Skills>
-      <Projects projects={projects} ></Projects>
+      <Skills list={skills} ></Skills>
+      <Projects list={projects} ></Projects>
     </div>
   );
 }

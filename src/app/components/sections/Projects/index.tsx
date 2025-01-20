@@ -1,22 +1,10 @@
 import ProjectCard from "../../ui/ProjectCard";
 import { IProject } from "@/app/interfaces/Project";
-
-export async function getServerSideProps() {
-    const response = await fetch("https://projects-repository.onrender.com/projects");
-    const data = await response.json();
-  
-    return {
-      props: {
-        projects: data.data || [], // Passa os dados para o componente como props
-      },
-    };
-}
-  
 interface ProjectsProps {
-    projects: Array<IProject>
+    list: Array<IProject>
 }
 
-export default function Projects({ projects }: ProjectsProps) {
+export default function Projects({ list }: ProjectsProps) {
 return (
     <section id="projects">
     <div className="projects-header py-20">
@@ -26,8 +14,8 @@ return (
     </div>
 
     <div className="flex flex-col items-center projects-content gap-5">
-        {projects.length > 0 ? (
-        projects.map((project) => (
+        {list.length > 0 ? (
+        list.map((project: IProject) => (
             <ProjectCard 
                 key={project.uuid}
                 title={project.title}
