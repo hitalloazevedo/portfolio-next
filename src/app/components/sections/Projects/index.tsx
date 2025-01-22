@@ -15,19 +15,22 @@ return (
 
     <div className="flex flex-col items-center projects-content gap-5">
         {list.length > 0 ? (
-        list.map((project: IProject) => (
-            <ProjectCard 
-                key={project.uuid}
-                title={project.title}
-                description={project.description}
-                deploy_url={project.deploy_url}
-                image_url={project.image_url}
-                repo_url={project.repo_url}
-                tech_stack={project.tech_stack}
-                />
+            list.map((project: IProject) => (
+                <ProjectCard 
+                    key={project.uuid}
+                    title={project.title}
+                    description={project.description}
+                    deploy_url={project.deploy_url}
+                    image_url={project.image_url}
+                    repo_url={project.repo_url}
+                    tech_stack={project.tech_stack}
+                    />
         ))
         ) : (
-        <p>No projects available.</p>
+            <div className="flex flex-col gap-3 justify-center items-center">
+                <span className="loading loading-spinner loading-lg bg-white"></span>
+                <p className="text-white text-xl">Loading projects...</p>
+            </div>
         )}
     </div>
     </section>

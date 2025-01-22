@@ -13,14 +13,21 @@ export default function Skills({ list }: ISkillProps) {
             </div>
             
             <div className="skills-content flex flex-col items-center gap-5">
-                {list && list.map((skill: ISkill) => (
+                { list.length > 0 ? (
+                    list.map((skill: ISkill) => (
                     <SkillCard
                         imageUrl={skill.svg_image}
                         title={skill.title}
                         description={skill.description}
                         key={skill.uuid}
                     />
-                ))}
+                ))
+                ) : (
+                    <div className="flex flex-col gap-3 justify-center items-center">
+                        <span className="loading loading-spinner loading-lg bg-white"></span>
+                        <p className="text-white text-xl">Loading skills...</p>
+                    </div>
+                )}
             </div>
         </section>
     );
