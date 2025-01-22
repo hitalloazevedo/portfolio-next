@@ -8,7 +8,7 @@ export default function Projects({ list }: ProjectsProps) {
 return (
     <section id="projects">
     <div className="projects-header py-20">
-        <h2 className="text-4xl text-white text-center font-semibold">
+        <h2 className="text-3xl text-white text-center font-semibold">
         <span className="text-[#00f500]">Featured</span> projects
         </h2>
     </div>

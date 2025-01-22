@@ -9,7 +9,7 @@ export default function About(){
     return (
         <section id="about" className="flex flex-col items-center">
             <div className="about-header py-20">
-                <h2 className="text-4xl font-semibold text-white">About me</h2>
+                <h2 className="text-3xl font-semibold text-white">About me</h2>
             </div>
 
             <div className="flex flex-col items-center about-content w-[90%]">

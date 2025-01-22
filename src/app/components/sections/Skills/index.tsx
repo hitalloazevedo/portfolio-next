@@ -9,7 +9,7 @@ export default function Skills({ list }: ISkillProps) {
     return (
         <section id="skills">
             <div className="skills-header text-white py-20 mt-6">
-                <h2 className="text-4xl text-center font-semibold">What I know?</h2>
+                <h2 className="text-3xl text-center font-semibold">What I know?</h2>
             </div>
             
             <div className="skills-content flex flex-col items-center gap-5">
