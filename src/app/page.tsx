@@ -6,6 +6,7 @@ import About from "./components/sections/About";
 import Skills from "./components/sections/Skills";
 import Projects from "./components/sections/Projects";
 import Contact from "./components/sections/Contact";
+import Footer from "./components/sections/Footer";
 import { useEffect, useState } from "react";
 import { getProjects } from "./api/getProjects";
 import { getSkills } from "./api/getSkills";
@@ -32,6 +33,7 @@ export default function Page() {
       <Skills list={skills} ></Skills>
       <Projects list={projects} ></Projects>
       <Contact></Contact>
+      <Footer></Footer>
     </div>
   );
 }
