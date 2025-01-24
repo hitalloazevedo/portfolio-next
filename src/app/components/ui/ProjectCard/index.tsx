@@ -23,7 +23,7 @@ export default function ProjectCard({ title, description, image_url, repo_url, d
             <div className="w-[90%] py-5">
                 <h3 className="text-lg">{title}</h3>
 
-                <p className="text-sm text-zinc-300">{description}</p>
+                <p className="text-sm text-zinc-400">{description}</p>
 
                 <div className="text-sm flex gap-3 flex-wrap mt-5">
                     {
