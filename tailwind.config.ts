@@ -13,9 +13,23 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      keyframes: {
+        floating: {
+          "0%, 100%": {
+            transform: "translateY(0px)"
+          },
+          "50%": {
+            transform: "translateY(-30px)"
+          },
+        }
+      },
+      animation: {
+        "floating-animation": "floating 2s infinite"
+      }
     },
   },
   plugins: [
     daisyui,
   ],
+
 } satisfies Config;
