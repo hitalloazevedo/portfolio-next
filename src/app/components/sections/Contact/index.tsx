@@ -27,6 +27,8 @@ export default function Contact(){
             </div>
 
             </div>
+
+            <hr className='m-auto w-11/12 mt-8'/>
       </section>
     )
 }
