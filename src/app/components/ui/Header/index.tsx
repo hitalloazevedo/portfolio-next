@@ -55,11 +55,11 @@ export default function Header() {
             isMenuActive ? "activeMenuOptions" : ""
           } flex flex-col gap-2 text-white items-center`}
         >
-          <li><Link href="#home">Home</Link></li>
-          <li><Link href="#about">About</Link></li>
-          <li><Link href="#skills">Skills</Link></li>
-          <li><Link href="#projects">Projects</Link></li>
-          <li><Link href="#contact">Contact</Link></li>
+          <li><Link onClick={() => setIsMenuActive(false)} href="#home">Home</Link></li>
+          <li><Link onClick={() => setIsMenuActive(false)} href="#about">About</Link></li>
+          <li><Link onClick={() => setIsMenuActive(false)} href="#skills">Skills</Link></li>
+          <li><Link onClick={() => setIsMenuActive(false)} href="#projects">Projects</Link></li>
+          <li><Link onClick={() => setIsMenuActive(false)} href="#contact">Contact</Link></li>
         </ul>
       </nav>
     </div>
