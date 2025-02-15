@@ -12,7 +12,7 @@ export default function Skills({ list }: ISkillProps) {
                 <h2 className="text-3xl text-center font-semibold">What I know?</h2>
             </div>
             
-            <div className="skills-content flex flex-col items-center gap-5">
+            <div className="skills-content flex flex-col justify-center items-center gap-5 lg:flex-row lg:flex-wrap">
                 { list.length > 0 ? (
                     list.map((skill: ISkill) => (
                     <SkillCard

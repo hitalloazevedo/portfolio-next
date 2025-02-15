@@ -13,7 +13,7 @@ return (
         </h2>
     </div>
 
-    <div className="flex flex-col items-center projects-content gap-5">
+    <div className="flex flex-col items-center projects-content gap-5 lg:flex-row lg:flex-wrap justify-center">
         {list.length > 0 ? (
             list.map((project: IProject) => (
                 <ProjectCard 

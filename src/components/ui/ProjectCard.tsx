@@ -15,7 +15,7 @@ export interface IProjectCardProps {
 
 export default function ProjectCard({ title, description, image_url, repo_url, deploy_url, tech_stack }: IProjectCardProps){
     return (
-        <div className="flex flex-col items-center text-white overflow-hidden bg-zinc-800 w-11/12 shadow-[0px_0px_3px_rgba(255,255,255,0.3)] rounded-lg">
+        <div className="flex flex-col items-center text-white overflow-hidden bg-zinc-800 w-11/12 shadow-[0px_0px_3px_rgba(255,255,255,0.3)] rounded-lg max-w-[500px]">
             <div className="bg-white">
                 <Image width={800} height={800} src={image_url} alt=""></Image>
             </div>

@@ -37,7 +37,7 @@ export default function ContactForm() {
   };
 
   return (
-    <form className="flex flex-col items-center gap-3">
+    <form className="flex flex-col items-center gap-3 max-w-[850px] m-auto">
       <div className="flex flex-col w-11/12 gap-1">
         <label className="text-white font-medium text-sm" htmlFor="name">
           Name
@@ -91,7 +91,7 @@ export default function ContactForm() {
         </button>
       </div>
       { sendEmailStatus.status != 0 && 
-        <p className={sendEmailStatus.status == 200 ? "text-[#00f500]" : "text-[rgb(255, 57, 57)]"}>{sendEmailStatus.message}</p>
+        <p className={sendEmailStatus.status == 200 ? "text-[#00f500]" : "text-[#ff3939]"}>{sendEmailStatus.message}</p>
       }
     </form>
   );
