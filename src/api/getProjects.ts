@@ -1,4 +1,4 @@
-import { IProject } from "../interfaces/Project";
+import { IProject } from "../@types/project";
 
 export const getProjects = async (): Promise<IProject[]> => {
     const response = await fetch("https://projects-repository.onrender.com/projects");

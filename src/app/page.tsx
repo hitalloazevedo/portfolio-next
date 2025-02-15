@@ -1,17 +1,17 @@
 "use client"
 
-import Header from "./components/ui/Header";
-import Home from "./components/sections/Home";
-import About from "./components/sections/About";
-import Skills from "./components/sections/Skills";
-import Projects from "./components/sections/Projects";
-import Contact from "./components/sections/Contact";
-import Footer from "./components/sections/Footer";
+import Header from "../components/ui/Header";
+import Home from "../components/sections/Home";
+import About from "../components/sections/About";
+import Skills from "../components/sections/Skills";
+import Projects from "../components/sections/Projects";
+import Contact from "../components/sections/Contact";
+import Footer from "../components/sections/Footer";
 import { useEffect, useState } from "react";
-import { getProjects } from "./api/getProjects";
-import { getSkills } from "./api/getSkills";
-import { IProject } from "./interfaces/Project";
-import { ISkill } from "./interfaces/Skill";
+import { getProjects } from "../api/getProjects";
+import { getSkills } from "../api/getSkills";
+import { IProject } from "../@types/project";
+import { ISkill } from "../@types/skill";
 
 export default function Page() {
 

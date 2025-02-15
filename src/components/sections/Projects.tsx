@@ -1,5 +1,5 @@
-import ProjectCard from "../../ui/ProjectCard";
-import { IProject } from "@/app/interfaces/Project";
+import ProjectCard from "../ui/ProjectCard";
+import { IProject } from "@/@types/project";
 interface ProjectsProps {
     list: Array<IProject>
 }

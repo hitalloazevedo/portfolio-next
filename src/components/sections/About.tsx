@@ -1,7 +1,7 @@
 import downloadIcon from '@/../public/download-icon.svg'
 import myImage from '@/../public/hitalloazevedo.png'
 import Image from "next/image"
-import SocialLink from '../../ui/SocialLink'
+import SocialLink from '../ui/SocialLink'
 
 export default function About(){
     return (

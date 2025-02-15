@@ -1,5 +1,5 @@
-import SkillCard from "../../ui/SkillCard";
-import { ISkill } from "@/app/interfaces/Skill";
+import SkillCard from "../ui/SkillCard";
+import { ISkill } from "@/@types/skill";
 
 interface ISkillProps {
     list: ISkill[];
