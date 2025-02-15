@@ -4,10 +4,18 @@ import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { formInputSchema } from "@/@types/form-input";
+import { ISendEmailStatus } from "@/@types/email";
+import { sendEmail } from "@/service/email-service";
+import { useState } from "react";
 
 export default function ContactForm() {
 
-  const { register, handleSubmit, formState } = useForm<
+  const [sendEmailStatus, setSendEmailStatus] = useState<ISendEmailStatus>({
+    message: "",
+    status: 0
+  });
+
+  const { register, handleSubmit, formState, reset } = useForm<
     z.infer<typeof formInputSchema>
   >({
     resolver: zodResolver(formInputSchema),
@@ -16,7 +24,16 @@ export default function ContactForm() {
   const { isValid } = formState;
 
   const onSubmit = (data: z.infer<typeof formInputSchema>) => {
-    console.log(data);
+    (async () => {
+      const sendEmailStatus: ISendEmailStatus = await sendEmail(data);
+      setSendEmailStatus(sendEmailStatus);
+      setTimeout(() => {
+        setSendEmailStatus({
+          message: "",
+          status: 0
+        });
+      }, 5000);
+    })()
   };
 
   return (
@@ -67,11 +84,15 @@ export default function ContactForm() {
           onClick={(e) => {
             e.preventDefault();
             handleSubmit(onSubmit)();
+            reset();
           }}
         >
           <Image className="w-[20px]" src={sendIcon} alt=""></Image>
         </button>
       </div>
+      { sendEmailStatus.status != 0 && 
+        <p className={sendEmailStatus.status == 200 ? "text-[#00f500]" : "text-[rgb(255, 57, 57)]"}>{sendEmailStatus.message}</p>
+      }
     </form>
   );
 }
