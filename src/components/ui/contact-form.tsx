@@ -37,7 +37,7 @@ export default function ContactForm() {
   };
 
   return (
-    <form className="flex flex-col items-center gap-3 max-w-[850px] m-auto">
+    <form className="flex flex-col items-center gap-3 sm:max-w-[700px] lg:max-w-[1160px] m-auto">
       <div className="flex flex-col w-11/12 gap-1">
         <label className="text-white font-medium text-sm" htmlFor="name">
           Name
