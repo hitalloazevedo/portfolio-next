@@ -39,7 +39,7 @@ export default function Header() {
     <div>
       <div className="app-header fixed w-screen backdrop-blur flex justify-between items-center border-b border-white p-3 z-10">
         <div className="header-logo">
-          <h3 className="text-[1.3rem] text-white md:text-[1.4rem]">
+          <h3 className="text-[1.3rem] text-white md:text-[1.4rem] font-medium">
             hitallo-<span className="text-[#00f500]">dev</span>
           </h3>
         </div>
