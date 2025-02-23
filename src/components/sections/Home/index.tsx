@@ -47,8 +47,8 @@ export default function Home() {
         <section id="home" className="flex flex-col justify-center items-center text-white h-screen">
           <div className="home-content z-[6]">
             <div className="text-content-container text-center">
-              <h2 className="text-[2rem] font-bold" >Web Developer</h2>
-              <h2 className="text-[#00F500] text-[2rem] font-bold">Fullstack</h2>
+              <h2 className="text-[2rem] font-bold md:text-[3rem] lg:text-[3.5rem] leading-[25px]" >Web Developer</h2>
+              <h2 className="text-[#00F500] text-[2rem] md:text-[3rem] lg:text-[3.5rem] font-bold">Fullstack</h2>
             </div>
             <div className="tech-image-container mt-3">
               <Carrousel icons={icons}></Carrousel>
