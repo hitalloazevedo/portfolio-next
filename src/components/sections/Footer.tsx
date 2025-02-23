@@ -6,7 +6,7 @@ export default function Footer(){
             <div className="flex justify-center">
                 <a href="#home" className="flex flex-col-reverse items-center gap-1 text-white hover:text-zinc-400 duration-300 box-border">Launch to the top <p className="animate-floating-animation">🚀</p></a>
             </div>
-            <div className="text-white px-4">
+            <div className="text-white px-4 md:text-center">
                 <h2 className="text-xl font-semibold">hitallo-<span className="text-[#00f500]">dev</span></h2> 
                 <p className="text-sm text-zinc-400 mt-1">Driven by curiosity, fueled by code, focused on impact.</p>
             </div>
