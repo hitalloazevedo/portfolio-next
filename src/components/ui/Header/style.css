@@ -1,16 +1,9 @@
 .menuDrawer {
-    transition: .6s;
-    opacity: 0;
-    height: 180px;
     animation: smoothDrawerClosing .6s;
-    visibility: hidden;
-    transition: .6s;
 }
 
 .activeMenuDrawer {
-    opacity: 1;
     animation: smoothDrawerOpening .6s;
-    visibility: visible;
 }
 
 @keyframes smoothDrawerOpening {
@@ -36,11 +29,7 @@
 /* =============================================================== */
 
 .menuOptions {
-    position: relative;
-    left: -100px;
     animation: hideOptionsToSide .6s;
-    opacity: 0;
-    transition: .2s;
 }
 
 .activeMenuOptions {
