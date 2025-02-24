@@ -20,7 +20,7 @@ export default function About(){
                     </div>
                     <SocialLink/>
                     <div className="download-cv text-white mt-5">
-                        <p className="flex items-center justify-center gap-1 text-sm"><Image className="w-[25px]" src={downloadIcon} alt=""></Image><a href="">Download my curriculum</a></p>
+                        <p className="flex items-center justify-center gap-1 text-sm"><Image className="w-[25px]" src={downloadIcon} alt=""></Image><a href="https://projects-repository.onrender.com/curriculum">Download my curriculum</a></p>
                     </div>
                 </div>
                 <div className="my-image-container w-[300px] rotate-2 rounded-lg overflow-hidden mt-8 mb-5 shadow-[0px_0px_30px_rgba(255,255,255,.1)]">
