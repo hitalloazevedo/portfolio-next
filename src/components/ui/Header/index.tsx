@@ -77,7 +77,7 @@ export default function Header() {
             isMenuActive ? "activeMenuOptions" : ""
           } ${
             !isLarger ? "flex flex-col gap-2 text-white items-center opacity-0" :
-            "flex gap-10 justify-end text-base opacity-100 " 
+            "flex gap-10 justify-end text-base opacity-100 text-white" 
           }`}
         >
           <li><Link onClick={() => setIsMenuActive(false)} href="#home">Home</Link></li>
