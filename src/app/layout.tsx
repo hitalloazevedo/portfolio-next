@@ -13,12 +13,23 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Hitallo Azevedo",
-  description: "Desenvolvedor Web Fullstack",
-  authors: {
-    name: "Hitallo Azevedo",
-    url: "https://hitalloazevedo.vercel.app/",
-  },
+  title: "Hitallo Azevedo | Fullstack Developer Portfolio",
+  description: "Hitallo Azevedo is a fullstack web developer. This portfolio showcases his projects, skills, and experience in modern web development.",
+  authors: [
+    {
+      name: "Hitallo Azevedo",
+      url: "https://hitalloazevedo.vercel.app/",
+    },
+  ],
+  keywords: [
+    "Hitallo Azevedo", "desenvolvedor de software", "fullstack developer",
+    "programador", "dev", "Next.js", "React", "JavaScript", "TypeScript",
+    "portfólio web", "web developer", "frontend", "backend", "software engineer",
+    "developer", "programmer", "web development", "desenvolvimento web",
+    "sites responsivos", "modern websites", "Node.js",
+    "API development", "freelancer", "projetos web", "cloud computing",
+    "MongoDB", "PostgreSQL", "MySQL", "Firebase", "Express.js", "GraphQL"
+  ]
 };
 
 export default function RootLayout({
