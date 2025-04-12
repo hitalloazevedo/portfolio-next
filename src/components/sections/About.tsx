@@ -15,9 +15,12 @@ export default function About(){
                 <div className='lg:flex lg:flex-col lg:items-start m-auto'>
                     <div className="introduction text-white text-center tracking-wide mb-5 max-w-[620px] lg:text-start">
                         <h3 className="mb-5 text-2xl text-[#00f500]">@hitalloazevedo</h3>
-                        <p>I am Hitallo Azevedo, I&apos;m 18 years old. I have been studying software development since I was 15, always improving my skills.</p>
-                        <p>I&apos;m pursuing an Associate Degree in Systems Analysis and Development at Universidade Estadual de Campinas (UNICAMP).</p>
-                        <p>Currently I&apos;m exploring backend development more deeply, I am really enjoying the experience using Node.js, Express and others tools, such as PrismaORM, MongoDB and Typescript.</p>
+                        <p>Hi! I&rsquo;m Hitallo Azevedo &mdash; a 19-year-old tech enthusiast who&rsquo;s been passionate about technology since I was 15. Ever since, I&rsquo;ve been on a journey of constant learning and growth.</p>
+
+                        <p>I&rsquo;m currently studying Systems Analysis and Development at UNICAMP (Universidade Estadual de Campinas), where I&rsquo;m building a solid foundation in software development.</p>
+
+                        <p>Lately, I&rsquo;ve been diving deeper into backend development, working with tools like Java Spring Boot, Docker, Node.js, Express, PrismaORM, MongoDB, and TypeScript &mdash; and I&rsquo;m loving every bit of it.</p>
+
                     </div>
                     <SocialLink/>
                     <div className="download-cv text-white mt-5">
