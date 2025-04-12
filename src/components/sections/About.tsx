@@ -1,5 +1,6 @@
 import downloadIcon from '@/../public/download-icon.svg'
 import myImage from '@/../public/hitalloazevedo.png'
+import profileImage from '@/../public/profile-image.jpeg'
 import Image from "next/image"
 import SocialLink from '../ui/SocialLink'
 
@@ -24,7 +25,7 @@ export default function About(){
                     </div>
                 </div>
                 <div className="my-image-container w-[300px] rotate-2 rounded-lg overflow-hidden mt-8 mb-5 shadow-[0px_0px_30px_rgba(255,255,255,.1)]">
-                    <Image src={myImage} alt=""></Image>
+                    <Image src={profileImage} alt="Hitallo Azevedo's pixar style profile picture."></Image>
                 </div>
             </div>
         </section>
