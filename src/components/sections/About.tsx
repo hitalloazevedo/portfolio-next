@@ -1,5 +1,5 @@
 import downloadIcon from '@/../public/download-icon.svg'
-import myImage from '@/../public/hitalloazevedo.png'
+//import myImage from '@/../public/hitalloazevedo.png'
 import profileImage from '@/../public/profile-image.jpeg'
 import Image from "next/image"
 import SocialLink from '../ui/SocialLink'
