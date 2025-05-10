@@ -8,8 +8,8 @@ import Projects from "../components/sections/Projects";
 import Contact from "../components/sections/Contact";
 import Footer from "../components/sections/Footer";
 import { useEffect, useState } from "react";
-import { getProjects } from "../api/getProjects";
-import { getSkills } from "../api/getSkills";
+import { getProjects } from "./api/getProjects";
+import { getSkills } from "./api/getSkills";
 import { IProject } from "../@types/project";
 import { ISkill } from "../@types/skill";
 
