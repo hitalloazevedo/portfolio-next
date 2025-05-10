@@ -1,8 +1,8 @@
-import { IProject } from "../@types/project";
+import { ISkill } from "../../@types/skill";
 
-const API_URL = "https://projects-repository.onrender.com/projects";
+const API_URL = "https://projects-repository.onrender.com/skills";
 
-export const getProjects = async (): Promise<IProject[]> => {
+export const getSkills = async (): Promise<ISkill[]> => {
     try {
         const response = await fetch(API_URL, {
             method: "GET",
@@ -20,7 +20,7 @@ export const getProjects = async (): Promise<IProject[]> => {
         return body.data ?? []; // Retorna um array vazio se 'data' for undefined
 
     } catch (error) {
-        console.error("Erro ao buscar projetos:", error);
+        console.error("Erro ao buscar skills:", error);
         return [];
     }
 };
