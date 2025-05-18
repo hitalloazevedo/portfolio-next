@@ -10,7 +10,7 @@ interface IProjectListItemProps {
 
 export default function ProjectListItem({ id, title, imageUrl }: IProjectListItemProps) {
     return (
-    <div className="flex bg-zinc-500 min-w-[500px] max-w-[600px] w-full p-5 justify-between rounded-md"> {/* skills */}
+    <div id={id} className="flex bg-zinc-500 min-w-[500px] max-w-[600px] w-full p-5 justify-between rounded-md"> {/* skills */}
     <div className="flex items-center gap-3">
             <Image width={30} height={30} src={imageUrl} alt="icon"></Image>
             <h2>{ title }</h2>
