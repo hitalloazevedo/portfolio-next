@@ -15,7 +15,7 @@ export default function About(){
                 <div className='lg:flex lg:flex-col lg:items-start m-auto'>
                     <div className="introduction text-white text-center tracking-wide mb-5 max-w-[620px] lg:text-start">
                         <h3 className="mb-5 text-2xl text-[#00f500]">@hitalloazevedo</h3>
-                        <p>Hi! I&rsquo;m Hitallo Azevedo &mdash; a 19-year-old tech enthusiast who&rsquo;s been passionate about technology since I was 15. Ever since, I&rsquo;ve been on a journey of constant learning and growth.</p>
+                        <p>Hi! I&rsquo;m Hitallo Azevedo &mdash; a 19-years-old tech enthusiast who&rsquo;s been passionate about technology since I was 15. Ever since, I&rsquo;ve been on a journey of constant learning and growth.</p>
 
                         <p>I&rsquo;m currently studying Systems Analysis and Development at UNICAMP (Universidade Estadual de Campinas), where I&rsquo;m building a solid foundation in software development.</p>
 
