@@ -32,8 +32,8 @@ export default function ProjectCard({ title, description, image_url, repo_url, d
                 </div>
 
                 <div className="flex justify-center items-center gap-3 mt-5">
-                    <Link className="flex items-center justify-center gap-2 bg-[#00dd00] text-sm text-zinc-800 font-semibold px-5 py-1 w-full text-center rounded-md" href={deploy_url}><Image className="w-[15px]" src={externalIcon} alt=""></Image>Production</Link>
-                    <Link className="flex items-center justify-center gap-2 bg-zinc-600 text-sm font-medium px-5 py-1 w-full text-center rounded-md" href={repo_url}><Image className="w-[15px]" src={githubIcon} alt=""></Image>Repository</Link>
+                    <Link className="flex items-center justify-center gap-2 bg-[#00dd00] text-sm text-zinc-800 font-semibold px-5 py-1 w-full text-center rounded-md" href={deploy_url} target="_blank" rel="noopener noreferer"><Image className="w-[15px]" src={externalIcon} alt=""></Image>Production</Link>
+                    <Link className="flex items-center justify-center gap-2 bg-zinc-600 text-sm font-medium px-5 py-1 w-full text-center rounded-md" href={repo_url} target="_blank" rel="noopener noreferer"><Image className="w-[15px]" src={githubIcon} alt=""></Image>Repository</Link>
                 </div>
             </div>
         </div>
