@@ -1,9 +1,10 @@
 "use client";
 
-import ProjectListItem from "@/components/ui/dashboard/project-list-item";
-import nodeicon from "@/../public/nodejs-icon.svg";
+import { Suspense } from "react";
+import ProjectsList from "@/components/ui/projects-list";
 
 export default function Dashboard() {
+  
   async function logout() {
     await fetch("/api/logout", {
       method: "GET",
@@ -28,7 +29,10 @@ export default function Dashboard() {
         <h2 className="text-3xl">Projects</h2>
 
         <div className="flex flex-col items-center p-5 gap-5 mt-5 rounded-md max-h-[310px] overflow-scroll">
-          <ProjectListItem
+          <Suspense fallback={<div>carregando...</div>}>
+            <ProjectsList/>
+          </Suspense>
+          {/* <ProjectListItem
             id="abc"
             imageUrl={nodeicon}
             title="nodejs"
@@ -47,7 +51,7 @@ export default function Dashboard() {
             id="abc"
             imageUrl={nodeicon}
             title="nodejs"
-          ></ProjectListItem>
+          ></ProjectListItem> */}
         </div>
       </div>
     </div>

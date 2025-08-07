@@ -24,7 +24,6 @@ export default function LoginPage(){
                 password
             })
         });
-
         
         if (response.ok){
             redirect("/dashboard");
@@ -33,7 +32,8 @@ export default function LoginPage(){
         setIsLoading(false);
 
         const body = await response.json();
-        setError(body.error)
+        setError(body.error);
+        console.log(body)
         
     }
 

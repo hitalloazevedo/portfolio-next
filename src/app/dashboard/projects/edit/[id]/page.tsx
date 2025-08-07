@@ -1,4 +1,11 @@
-export default function EditProjectPage() {
+import { getProjectByUUID } from "@/app/api/getProjectByUUID"
+import { use } from "react";
+
+export default function Page({ params }: { params: { id: string } }) {
+    const uuid = params.id;
+    const project = use(getProjectByUUID(uuid));
+    console.log(project);
+
     return (
         <div className="bg-zinc-800 h-screen flex items-center">
             <form className="flex flex-col bg-zinc-600 max-w-[600px] gap-5 p-3 m-auto min-w-[500px]">
